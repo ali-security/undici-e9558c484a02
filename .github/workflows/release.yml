@@ -1,11 +1,7 @@
 name: Release undici and undici-types on NPM and create GitHub Release
 
 on:
-  push:
-    branches:
-     - main
-    paths:
-      - package.json
+  workflow_dispatch:
 
 permissions:
   contents: read

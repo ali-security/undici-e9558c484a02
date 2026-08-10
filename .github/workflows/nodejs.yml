@@ -49,9 +49,6 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Print installed dependencies
-        run: npm ls --all
-        continue-on-error: true
 
       - name: Configure hosts file for WPT (Windows)
         if: runner.os == 'Windows'
